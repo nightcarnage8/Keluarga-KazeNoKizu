@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Website Keluarga</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Loading Screen -->
+  <div class="loading-screen">
+    <div class="loader">
+      <div class="spinner"></div>
+      <h1>Loading...</h1>
+      <div class="progress-bar">
+        <div class="progress-fill"></div>
+      </div>
+      <p class="created-by">Created By Farid</p>
+    </div>
+  </div>
+
+  <nav class="navbar navbar-expand-lg custom-navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Kaze No Kizu</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+        aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#admin">Admin</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#instagram">Instagram</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#sejarah">Sejarah</a>
+          </li>
+          <li class="nav-item">
+            <button id="theme-toggle" class="btn btn-outline-light nav-link" aria-label="Toggle theme">
+              <i id="theme-icon" class="fas fa-sun"></i>
+            </button>
+          </li>
+        </ul>
+
+
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero fade-in">
+    <div class="container">
+      <h1>Selamat Datang Di Keluarga Kaze No Kizu</h1>
+      <p>Keluarga Kaze No Kizu Adalah Keluarga Virtual Cemara Yang Harmois Penuh Kegembiraan Bersama</p>
+      <img src="image/KnK1.jpg" alt="image" class="hero-image" id="hero-img">
+      <a href="https://whatsapp.com/channel/0029Vb73hG2Fcow1MY47843i" class="cv-button">FOLLOW SALURAN KAMI</a>
+      <a href="https://whatsapp.com/channel/0029Vb73hG2Fcow1MY47843i" class="cv-button">JOIN GRUP KAMI</a>
+    </div>
+  </section>
+
+  <!-- Image Modal -->
+  <div id="imageModal" class="image-modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImg">
+    <div class="zoom-controls">
+      <button id="zoomIn">Zoom In</button>
+      <button id="zoomOut">Zoom Out</button>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <section id="about" class="section about fade-in">
+    <div class="container">
+      <h2><b>Tentang Kami :</h2></b>
+      <div class="row">
+        <div class="col-md-6 fade-in">
+          <p><b>Keluarga Kaze No Kizu adalah sebuah keluarga virtual yang terdiri dari orang-orang yang berasal dari berbagai belahan dunia. Meskipun tidak ada ikatan darah, namun mereka telah menjadi sebuah keluarga yang sangat erat dan tak terpisahkan.
+
+            Keluarga Kaze No Kizu didirikan oleh seorang perempuan muda yang bernama Risaa, yang memiliki visi untuk menciptakan sebuah komunitas ataupun grup online yang hangat dan mendukung. Risaa memiliki pengalaman pahit dalam hidupnya, namun dia tidak ingin orang lain mengalami hal yang sama. Dia ingin menciptakan sebuah tempat dimana orang-orang bisa merasa aman, diterima, dan didukung.
+
+            Seiring waktu, Keluarga Kaze No Kizu tumbuh menjadi sebuah komunitas ataupun grup yang besar dan beragam. Mereka memiliki anggota dari berbagai usia, latar belakang, dan minat. Namun, mereka semua memiliki satu hal yang sama : keinginan untuk memiliki sebuah keluarga yang hangat dan cemara.</p></b>
+        </div>
+        <div class="col-md-6 fade-in">
+          <img src="image/KnK2.jpg" alt="image" class="about-image">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Skills Section -->
+  <section id="admin" class="section admin fade-in">
+    <div class="container">
+      <h2><b>Nama Anggota Admin :</h2></b>
+      <div class="row">
+        <div class="col-md-4 skill-item fade-in">
+          <img src="image/Risaa.jpg" alt="Risaa" class="profile-image">
+          <h4>Risaa (Creator)</h4>
+          <p>Sebagai kreator grup komunitas</p>
+        </div>
+        <div class="col-md-4 skill-item fade-in">
+          <img src="image/Sall.jpg" alt="Novisal" class="profile-image">
+          <h4>Sall (Admin)</h4>
+          <p>Sebagai admin grup</p>
+        </div>
+        <div class="col-md-4 skill-item fade-in">
+          <img src="image/Farid.jpg" alt="Farid" class="profile-image">
+          <h4>Farid (Admin)</h4>
+          <p>Sebagai admin grup</p>
+        </div>
+        <div class="col-md-4 skill-item fade-in">
+          <img src="image/Lucky.jpg" alt="Farid" class="profile-image">
+          <h4>Lucky (Admin)</h4>
+          <p>Sebagai admin grup</p>
+        </div>
+        <div class="col-md-4 skill-item fade-in">
+          <img src="image/Delta.jpg" alt="Farid" class="profile-image">
+          <h4>Delta (Admin)</h4>
+          <p>Sebagai admin grup</p>
+        </div>
+        <div class="col-md-4 skill-item fade-in">
+          <img src="image/Rasya.jpg" alt="Farid" class="profile-image">
+          <h4>Rasya (Admin)</h4>
+          <p>Sebagai admin grup</p>
+        </div>
+        <div class="col-md-4 skill-item fade-in">
+          <img src="image/Alyna.jpg" alt="Farid" class="profile-image">
+          <h4>Alyna (Admin)</h4>
+          <p>Sebagai admin grup</p>
+        </div>
+        <div class="col-md-4 skill-item fade-in">
+          <img src="image/Seno.jpg" alt="Farid" class="profile-image">
+          <h4>Seno (Admin)</h4>
+          <p>Sebagai admin grup</p>
+        </div>
+        <div class="col-md-4 skill-item fade-in">
+          <img src="image/Salman.jpg" alt="Farid" class="profile-image">
+          <h4>Salman (Admin)</h4>
+          <p>Sebagai admin grup</p>
+        </div>
+        <div class="col-md-4 skill-item fade-in">
+          <img src="image/Arkan.jpg" alt="Farid" class="profile-image">
+          <h4>Arkan (Admin)</h4>
+          <p>Sebagai admin grup</p>
+        </div>
+        <div class="col-md-4 skill-item fade-in">
+          <img src="image/Raisaa.jpg" alt="Farid" class="profile-image">
+          <h4>Raisaa (Admin Chindo)</h4>
+          <p>Sebagai admin grup (orang nya adios)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="instagram" class="section projects fade-in">
+    <div class="container">
+      <h2><b>Instagram Admin :</h2></b>
+      <div class="row">
+        <div class="col-md-4 project-card fade-in">
+          <div class="card">
+            <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Proyek 1">
+            <div class="card-body">
+              <h5 class="card-title">Risaa</h5>
+              <p class="card-text">@r.risasa_</p>
+              <a href="https://www.instagram.com/r.risasa_" class="btn btn-primary">FOLLOW HERE</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 project-card fade-in">
+          <div class="card">
+            <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Proyek 2">
+            <div class="card-body">
+              <h5 class="card-title">Sall</h5>
+              <p class="card-text">@nvsaall._</p>
+              <a href="https://www.instagram.com/nvsaall._" class="btn btn-primary">FOLLOW HERE</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 project-card fade-in">
+          <div class="card">
+            <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Proyek 3">
+            <div class="card-body">
+              <h5 class="card-title">FaridXD</h5>
+              <p class="card-text">@ell_require.js</p>
+              <a href="https://www.instagram.com/ell_require.js" class="btn btn-primary">FOLLOW HERE</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 project-card fade-in">
+          <div class="card">
+            <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Proyek 3">
+            <div class="card-body">
+              <h5 class="card-title">Lucky</h5>
+              <p class="card-text">@luckymankb</p>
+              <a href="https://www.instagram.com/luckymankb" class="btn btn-primary">FOLLOW HERE</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 project-card fade-in">
+          <div class="card">
+            <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Proyek 3">
+            <div class="card-body">
+              <h5 class="card-title">Styo Seno</h5>
+              <p class="card-text">@styo_son1945</p>
+              <a href="https://www.instagram.com/styo_son1945" class="btn btn-primary">FOLLOW HERE</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 project-card fade-in">
+          <div class="card">
+            <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Proyek 3">
+            <div class="card-body">
+              <h5 class="card-title">Salman</h5>
+              <p class="card-text">@salman_maulidi_16</p>
+              <a href="https://www.instagram.com/salman_maulidi_16" class="btn btn-primary">FOLLOW HERE</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 project-card fade-in">
+          <div class="card">
+            <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Proyek 3">
+            <div class="card-body">
+              <h5 class="card-title">Rasya</h5>
+              <p class="card-text">@rasyaadhi28</p>
+              <a href="https://www.instagram.com/rasyaadhi28" class="btn btn-primary">FOLLOW HERE</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 project-card fade-in">
+          <div class="card">
+            <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Proyek 3">
+            <div class="card-body">
+              <h5 class="card-title">Alyna</h5>
+              <p class="card-text">@alynapie</p>
+              <a href="https://www.instagram.com/alynapie" class="btn btn-primary">FOLLOW HERE</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 project-card fade-in">
+          <div class="card">
+            <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Proyek 3">
+            <div class="card-body">
+              <h5 class="card-title">Delta</h5>
+              <p class="card-text">@hoshino5300</p>
+              <a href="https://www.instagram.com/hoshino5300" class="btn btn-primary">FOLLOW HERE</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 project-card fade-in">
+          <div class="card">
+            <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Proyek 3">
+            <div class="card-body">
+              <h5 class="card-title">Arkan</h5>
+              <p class="card-text">@dante28911</p>
+              <a href="https://www.instagram.com/dante28911" class="btn btn-primary">FOLLOW HERE</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 project-card fade-in">
+          <div class="card">
+            <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Proyek 3">
+            <div class="card-body">
+              <h5 class="card-title">Raisaa</h5>
+              <p class="card-text">@lemon.merahh_</p>
+              <a href="https://www.instagram.com/lemon.merahh_" class="btn btn-primary">FOLLOW HERE</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="sejarah" class="section sejarah fade-in">
+    <div class="container">
+      <h2><b>Sejarah Kaze No Kizu</b></h2>
+      <div class="row">
+        <div class="col-md-6 fade-in">
+          <p><b>Awal mula nya terbentuk grup "Kaze No Kizu" Jadi gini, dulu tuh owner lagi bingung mau kasih nama grup ini dengan nama apa 🤔, semua nama di coba in tapi belum ada yang ikonik dan kurang cocok 🤓. Tiba tiba owner kepikiran deh, Pengen nama grup nya yang ada kaze-kaze nya gitu loh 🤩, akhirnya owner nyoba nih translate di google, satu satu gitu nyobain kalimat, terus ada nih yang pas, saat itu owner nulis nya di translate itu "Bekas Luka Karena angin", Dan menurut owner sih bahasa jepang nya bagus juga, akhirnya dipakai lah nama "Kaze No Kizu" 🥳, Kaya bagus aja gitu terus ikonik dan menarik 🤩.
+
+          </p></b>
+        </div>
+        <div class="col-md-6 fade-in">
+          <img src="image/Kucing Memes.jpg" alt="image" class="about-image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+      <div class="footer-bottom">
+        <p>&copy; 2025 - 2026 Keluarga Kaze No Kizu. All rights reserved. | Dibuat dengan ❤️ oleh Farid</p>
+        <ul>
+          <li><a href="policy.html">Privacy Policy</a></li>                       
+          <li><a href="terms.html">Terms of Service</a></li>
+          <li><a href="licenses.html">Licenses</a></li> 
+        </ul>      
+      </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="main.js"></script>
+
+  <!-- Scroll to Top Button -->
+  <button class="scroll-to-top-btn" id="scrollToTop" title="Scroll to Top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+</body>
+</html>
