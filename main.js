@@ -258,3 +258,57 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+
+/*music section*/
+
+// Music player functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const playButtons = document.querySelectorAll('.play-btn');
+    const audios = document.querySelectorAll('audio');
+
+    // Function to pause all audios and reset their icons
+    function pauseAllAudios(exceptAudioId) {
+        audios.forEach(audio => {
+            if (audio.id !== exceptAudioId) {
+                audio.pause();
+                const button = document.querySelector(`[data-audio="${audio.id}"]`);
+                if (button) {
+                    const icon = button.querySelector('i');
+                    icon.classList.remove('fa-pause');
+                    icon.classList.add('fa-play');
+                }
+            }
+        });
+    }
+
+    playButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const audioId = this.getAttribute('data-audio');
+            const audio = document.getElementById(audioId);
+            const icon = this.querySelector('i');
+
+            if (audio.paused) {
+                // Pause all other audios before playing this one
+                pauseAllAudios(audioId);
+                audio.play();
+                icon.classList.remove('fa-play');
+                icon.classList.add('fa-pause');
+            } else {
+                audio.pause();
+                icon.classList.remove('fa-pause');
+                icon.classList.add('fa-play');
+            }
+        });
+    });
+
+    // Reset play button when audio ends
+    audios.forEach(audio => {
+        audio.addEventListener('ended', function() {
+            const audioId = this.id;
+            const button = document.querySelector(`[data-audio="${audioId}"]`);
+            const icon = button.querySelector('i');
+            icon.classList.remove('fa-pause');
+            icon.classList.add('fa-play');
+        });
+    });
+});
