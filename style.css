@@ -416,6 +416,20 @@ body.theme-transition * {
     padding: 10px 20px;
 }
 
+.play-btn {
+    background-color: #ffd700 !important; /* Yellow color */
+    border-color: #ffd700 !important;
+    color: #000 !important; /* Black text for contrast */
+    display: block;
+    margin: 0 auto; /* Center the button */
+    width: fit-content; /* Adjust width to content */
+}
+
+.play-btn:hover {
+    background-color: #ffed4e !important; /* Lighter yellow on hover */
+    border-color: #ffed4e !important;
+}
+
 /* Projects section */
 .projects {
     background-color: #ffffff;
