@@ -74,14 +74,7 @@ function initImageModal() {
 
     let currentScale = 1;
 
-    // Open modal on image click
-    heroImg.addEventListener('click', () => {
-        modal.style.display = 'block';
-        modal.classList.add('show');
-        modalImg.src = heroImg.src;
-        currentScale = 1;
-        modalImg.style.transform = 'scale(1)';
-    });
+    // Modal functionality removed for hero image to match profile images
 
     // Close modal
     closeBtn.addEventListener('click', () => {
