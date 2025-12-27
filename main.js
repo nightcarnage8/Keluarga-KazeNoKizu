@@ -282,14 +282,14 @@ document.addEventListener('DOMContentLoaded', function() {
     // Function to get next audio ID
     function getNextAudioId(currentAudioId) {
         const currentNum = parseInt(currentAudioId.slice(5));
-        const nextNum = currentNum === 39 ? 1 : currentNum + 1;
+        const nextNum = currentNum === 40 ? 1 : currentNum + 1;
         return 'audio' + nextNum;
     }
 
     // Function to get previous audio ID
     function getPreviousAudioId(currentAudioId) {
         const currentNum = parseInt(currentAudioId.slice(5));
-        const prevNum = currentNum === 1 ? 39 : currentNum - 1;
+        const prevNum = currentNum === 1 ? 40 : currentNum - 1;
         return 'audio' + prevNum;
     }
 
@@ -486,4 +486,5 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
 
