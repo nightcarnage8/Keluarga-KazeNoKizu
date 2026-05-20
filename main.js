@@ -39,9 +39,9 @@ function startTypingAnimation() {
 
     if (heroH1 && heroP) {
         // Typing for h1
-        typeWriter(heroH1, 'Selamat Datang Di Website Keluarga Kaze No Kizu (^^)', 100, () => {
+        typeWriter(heroH1, 'Kaze No Kizu Telah Berakhir', 100, () => {
             // After h1 finishes, start p
-            typeWriter(heroP, 'Keluarga "Kaze No Kizu" Adalah Keluarga Virtual Cemara Yang Harmonis Penuh Kegembiraan Bersama :D', 50);
+            typeWriter(heroP, 'Kaze No Kizu Adalah Grup Virtual Penuh Kemunafikan Dan Kegelapan', 50);
         });
     }
 }
